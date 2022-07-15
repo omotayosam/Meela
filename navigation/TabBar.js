@@ -13,14 +13,13 @@ const TabBar = () => {
       tabBarOptions={{
         activeTintColor: "#4f62c0",
         inactiveTintColor: "#ffffff",
-        height: 90,
       }}
       appearance={{
         tabBarBackground: "#4f62c0",
         activeTabBackgrounds: "#ffffff",
         dotSize: "small",
-        dotCornerRadius: 10,
-        topPadding: 10,
+        dotCornerRadius: 15,
+        floating: true,
       }}
     >
       <Tabs.Screen
