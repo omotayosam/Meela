@@ -56,7 +56,7 @@ const VerifyScreen = () => {
             <TextInput style={{ fontSize: 35, fontWeight: "bold" }} />
           </View>
           <View style={styles.otpButton}>
-            <TextInput style={{ fontSize: 35, fontWeight: "bold" }}3 />
+            <TextInput style={{ fontSize: 35, fontWeight: "bold" }} />
           </View>
         </View>
 

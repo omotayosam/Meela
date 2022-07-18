@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary,
     alignSelf: "center",
 
-    marginTop: 250,
+    marginTop: 100,
   },
   text_TERTIARY: {
     color: "gray",

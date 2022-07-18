@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import SafeView from "../components/SafeView";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton/CustomButton";
+import CountryPicker from "rn-country-dropdown-picker";
 const { width, height } = Dimensions.get("window");
 const COLORS = {
   primary: "#4f62c0",
@@ -24,8 +25,11 @@ const PhoneRegScreen = ({ navigation }) => {
   const [phonenumber, setPhoneNumber] = useState("");
 
   const onContinuePressed = () => {
-    console.warn("continue ");
+    navigation.navigate("VerifyScreen");
   };
+  function handleSelection(e) {
+    console.log(e);
+  }
 
   return (
     <SafeAreaView style={[SafeView.AndroidSafeArea, styles.container]}>
@@ -50,15 +54,19 @@ const PhoneRegScreen = ({ navigation }) => {
               send you 4 digit code to verify account
             </Text>
           </View>
-          <View>
-            <Text>Enter your location</Text>
-            <CustomInput
-              placeholder="Country"
-              value={country}
-              setValue={setCountry}
+          <View style={styles.pickercontainer}>
+            <CountryPicker
+              InputFieldStyle={styles.ContainerStyle}
+              DropdownContainerStyle={styles.myDropdownContainerStyle}
+              DropdownRowStyle={styles.myDropdownRowStyle}
+              Placeholder="choose country ..."
+              DropdownCountryTextStyle={styles.myDropdownCountryTextStyle}
+              countryNameStyle={styles.mycountryNameStyle}
+              flagSize={32}
+              selectedItem={handleSelection}
             />
           </View>
-          <View>
+          <View style={{ marginVertical: 50 }}>
             <Text>Enter your Phone Number</Text>
             <CustomInput
               placeholder="Phone Number"
@@ -94,5 +102,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 10,
     lineHeight: 23,
+  },
+  pickercontainer: {
+    width: "100%",
+    backgroundColor: "#fff",
+    borderRadius: 15,
+
+    padding: 20,
+    marginVertical: 10,
+    height: "auto",
+    shadowColor: "#52006A",
+
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 5,
+    elevation: 20,
   },
 });

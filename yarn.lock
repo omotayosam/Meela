@@ -5501,6 +5501,11 @@ rc@~1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-custom-flag-select@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/react-custom-flag-select/-/react-custom-flag-select-3.0.7.tgz#c2a2de3fd381e75db550b60c1832fd9ebacb5e1f"
+  integrity sha512-yQ386L3GJT2qnKWU5iWQPBnLRD+fEUIJ7HAwtnig3Tp2Vh2gVOeOMhRtcWhT5fatg/8rkbtv/ZabcDc9NpP5Gw==
+
 react-devtools-core@^4.23.0:
   version "4.24.7"
   resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.24.7.tgz#43df22e6d244ed8286fd3ff16a80813998fe82a0"
@@ -5552,6 +5557,11 @@ react-native-codegen@^0.0.17:
     flow-parser "^0.121.0"
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
+
+react-native-flags@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-flags/-/react-native-flags-1.0.0.tgz#8bf99b58e125ca6057d7923549132b3579754ed3"
+  integrity sha512-Lx0/2Rv4oN5M3YmgGZPnxsTOEud6pMGX3HWrvw8Yftp9Bl+ORxdG8xjF2Gmm68iKP8T7NnQoJ8iMirjj5+qrgQ==
 
 react-native-gesture-handler@~2.2.1:
   version "2.2.1"
@@ -5885,6 +5895,11 @@ rimraf@~2.6.2:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+rn-country-dropdown-picker@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/rn-country-dropdown-picker/-/rn-country-dropdown-picker-2.1.8.tgz#fc2aef98f9328d18fea75a86912b5b53c2eb2994"
+  integrity sha512-TMZSCDP/c+qjAiZbwb8acGMeux6llJ2jAHDNR2lxnhOPxr9JUzBpp1V29arbXBInd0nVVwgjVoXPKNUJ6pl69g==
 
 run-parallel@^1.1.9:
   version "1.2.0"
