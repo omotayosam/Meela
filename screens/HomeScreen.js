@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-
+import TabBar from "../navigation/TabBar";
 const HomeScreen = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <TabBar />
     </View>
   );
 };

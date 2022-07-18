@@ -8,6 +8,7 @@ import SignInScreen from "./screens/SignInScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import PhoneRegScreen from "./screens/PhoneRegScreen";
 import VerifyScreen from "./screens/VerifyScreen";
+import HomeScreen from "./screens/HomeScreen";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import SafeView from "./components/SafeView";
@@ -44,6 +45,7 @@ export default function App() {
             <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
             <Stack.Screen name="PhoneRegScreen" component={PhoneRegScreen} />
             <Stack.Screen name="VerifyScreen" component={VerifyScreen} />
+            <Stack.Screen name="HomeScreen" component={HomeScreen} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>

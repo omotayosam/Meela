@@ -24,7 +24,7 @@ const SignInScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const onSignInPressed = () => {
-    console.warn("signed in");
+    navigation.navigate("HomeScreen");
   };
 
   const onAppleSignInPressed = () => {

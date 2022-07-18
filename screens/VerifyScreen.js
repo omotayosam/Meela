@@ -19,9 +19,9 @@ const COLORS = {
   secondary: "#0e1839",
 };
 
-const VerifyScreen = () => {
+const VerifyScreen = ({ navigation }) => {
   const onContinuePressed = () => {
-    navigation.navigate("VerifyScreen");
+    navigation.navigate("HomeScreen");
   };
   return (
     <SafeAreaView style={SafeView.AndroidSafeArea}>
