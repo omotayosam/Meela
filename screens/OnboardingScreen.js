@@ -135,7 +135,7 @@ const OnboardingScreen = ({ navigation }) => {
             >
               <TouchableOpacity
                 style={[styles.btn, styles.shadows]}
-                onPress={() => navigation.navigate("RegisterScreen")}
+                onPress={() => navigation.navigate("SignUpScreen")}
               >
                 <Text style={{ fontWeight: "bold", color: COLORS.white }}>
                   Lets Create an Account

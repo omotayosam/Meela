@@ -5,7 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import OnboardingScreen from "./screens/OnboardingScreen";
 import SignInScreen from "./screens/SignInScreen";
-import RegisterScreen from "./screens/RegisterScreen";
+import SignUpScreen from "./screens/SignUpScreen";
+import PhoneRegScreen from "./screens/PhoneRegScreen";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import SafeView from "./components/SafeView";
@@ -39,7 +40,8 @@ export default function App() {
             )}
 
             <Stack.Screen name="SignInScreen" component={SignInScreen} />
-            <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+            <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+            <Stack.Screen name="PhoneRegScreen" component={PhoneRegScreen} />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
