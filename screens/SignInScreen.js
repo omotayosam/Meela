@@ -24,7 +24,7 @@ const SignInScreen = ({ navigation }) => {
   const [password, setPassword] = useState("");
 
   const onSignInPressed = () => {
-    navigation.navigate("HomeScreen");
+    navigation.navigate("TabBar");
   };
 
   const onAppleSignInPressed = () => {

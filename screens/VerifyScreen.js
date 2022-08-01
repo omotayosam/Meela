@@ -21,7 +21,7 @@ const COLORS = {
 
 const VerifyScreen = ({ navigation }) => {
   const onContinuePressed = () => {
-    navigation.navigate("HomeScreen");
+    navigation.navigate("TabBar");
   };
   return (
     <SafeAreaView style={SafeView.AndroidSafeArea}>
